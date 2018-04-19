@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>javaScript语法[中]</title>
+</head>
+<body>
+	<h1>3. 变量</h1>
+	<p>ECMAScript的变量是松散类型的，所谓的松散类型就是可以用来保存任何类型的数据。每个变量仅仅 是一个用于保存值的占位符而已。</p>
+	<ol>
+		<li>var message;  ----- undefined</li>
+		<li>var message = "hi";</li>
+		<li>var message = "hi"; message = 100;有效，但不推荐这样。</li>
+		<li>省略var操作符，变量就成了全局变量。但是，不推荐使用。
+		这样做，不方便维护，代码混乱。在严格模式下，会抛出ReferenceError错误。</li>
+		<li>一条语句定义多个变量：var message="hi",found = false,age = 29;</li>
+	</ol>
+	<h1>4. 数据类型</h1>
+	<p>ECMAScript中有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有一种复杂的数据类型--Object，Object本质上是由一组无序的名值对组成。</p>
+	<h2>4.1 typeof 操作符</h2>
+	<p>用来检测给定变量的数据类型。</p>
+	var message ="HI";
+	console.log(typeof(message);
+	<ol>
+		<li>"undefined"-----未定义</li>
+		<li>"boolean"-------布尔值</li>
+		<li>"string"--------字符串</li>
+		<li>"number"--------数值</li>
+		<li>"object"--------对象或者null</li>
+		<li>"function"------函数</li>
+	</ol>
+	
+</body>
+</html>
